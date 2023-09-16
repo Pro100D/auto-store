@@ -1,13 +1,13 @@
-import { NavLink } from '../../../node_modules/react-router-dom/dist/index';
+import { Nav, StyledLink } from './Header.styled';
 
 const Header = () => {
   return (
     <header>
-      <nav>
-        <NavLink to={'/'}>Home</NavLink>
-        <NavLink to={'/catalog'}>Catalog</NavLink>
-        <NavLink to={'/favorite'}>Favorite</NavLink>
-      </nav>
+      <Nav>
+        <StyledLink to={'/'}>Home</StyledLink>
+        <StyledLink to={'/catalog'}>Catalog</StyledLink>
+        <StyledLink to={'/favorite'}>Favorite</StyledLink>
+      </Nav>
     </header>
   );
 };
